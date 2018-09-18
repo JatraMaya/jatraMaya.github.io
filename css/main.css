@@ -91,11 +91,14 @@
 
 	#main {
 		background: url("../img/city1-small.jpg");
+		background-size: cover;
 	}
 	#portfolio {
 		background: url("../img/robot-small.jpg");
+		background-size: cover;
 	}
 	#contact {
 		background: url("../img/car1-small.jpg");
+		background-size: cover;
 	}
 }
