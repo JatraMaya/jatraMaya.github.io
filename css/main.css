@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Font section */
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+/* End of Font Section */
+
+
+
+body {
+	background: url("../img/city1.jpg");
+	background-size: cover;
+}
+
+	.navbar	{
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+		flex-wrap: wrap;
+		background: rgba(72, 90, 82, 1);
+	}
+		.navbar div {
+			margin: 0 10px;
+		}
+		.navbar-child {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.profile {
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			filter: sepia(70%);
+		}
+
+		.navbar li {
+			list-style: none;
+		}
+			.navbar ul li a {
+				font-family: 'Merriweather', serif;
+				text-decoration: none;
+				font-size: 25px;
+				color: rgb(159,141,111);
+				font-weight: bolder;
+				transition: color ease-in 0.7s;
+			}
+			.navbar ul li a:hover {
+				font-family: 'Merriweather', serif;
+				text-decoration: none;
+				font-size: 25px;
+				color: rgb(240,218,183);
+				transition: color ease-in 1s;
+			}
+
+
