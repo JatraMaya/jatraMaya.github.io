@@ -83,3 +83,19 @@
 	background-attachment: fixed;
 	scroll-behavior: smooth;
 }
+
+
+/* Media Query */
+
+@media only screen and (max-width: 360px) {
+
+	#main {
+		background: url("../img/city1-small.jpg");
+	}
+	#portfolio {
+		background: url("../img/robot-small.jpg");
+	}
+	#contact {
+		background: url("../img/car1-small.jpg");
+	}
+}
