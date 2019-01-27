@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ahmad F. Iksan</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Oswald|Roboto+Mono" rel="stylesheet"> 
+	<title>Ahmad F. Iksan</title>
 </head>
 <body>
-  <div id="main">
-    <nav class="navbar">
-      <div class="flex-nav" style="flex-grow: 2">
-        <img class="profile" src="img/profile.jpg" alt="profile picture">
-      </div>
-      <div class="flex-nav" style="flex-grow: 2">
-          <a href="https://github.com/JatraMaya" target="_blank" class="git"><i class="fa fa-github"></i> My-Github</a>
-      </div>
-      <div class="flex-nav"> 
-        <ul class="nav-item">
-          <li><a href="#main">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul></div>
-    </nav>
-  </div>
-
-  <div id="portfolio">
-    
-  </div>
-
-  <div id="contact">
-    
-  </div>
-  
+	<div class="hamburger hamburger--spin">
+		<div class="hamburger-box">
+			<div class="hamburger-inner"></div>
+		</div>
+	</div>
+	<section id="main" class="main">
+		<nav>
+			<ul>
+				<li><a href="#main" class="scroll">main</a></li>
+				<li><a href="#portfolio" class="scroll">portfolio</a></li>
+				<li><a href="#contact" class="scroll">contact</a></li>
+			</ul>
+		</nav>
+		<p class="foreword">Hi, I am <span>Ahmad F. Iksan</span> the <span>self-proclaimed</span> friendliest web developer you'll ever met. Nice too meet you.</p>
+	</section>
+	<section id="portfolio" class="portfolio"></section>
+	<section id="contact" class="contact"></section>
+	<div class="overlay">
+		<ul>
+			<li><a href="#main" class="mobile-menu scroll">main</a></li>
+			<li><a href="#portfolio" class="mobile-menu scroll">portfolio</a></li>
+			<li><a href="#contact" class="mobile-menu scroll">contact</a></li>
+		</ul>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/script/main.js"></script>
 </body>
 </html>
