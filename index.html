@@ -1,43 +1,45 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="google-site-verification" content="ai480nmypVhiOQTQcl8BSF7KzS3llxnnFkI_ETxu7PQ" />
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Oswald|Roboto+Mono" rel="stylesheet"> 
-	<title>Ahmad F. Iksan</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto" rel="stylesheet"> 
+	<title>ahmad f. iksan</title>
 </head>
 <body>
-	<div class="hamburger hamburger--spin">
-		<div class="hamburger-box">
-			<div class="hamburger-inner"></div>
-		</div>
+	<div class="burger">
+		<span></span>
+		<span></span>
+		<span></span>
 	</div>
-	<section id="main" class="main">
-		<nav>
+	<section class="main" id="main">
+		<nav class="main-nav">
 			<ul>
-				<li><a href="#main" class="scroll">main</a></li>
-				<li><a href="#about" class="scroll">about</a></li>
-				<li><a href="#portfolio" class="scroll">portfolio</a></li>
-				<li><a href="#contact" class="scroll">contact</a></li>
+				<li><a href="#main">main</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
-		<p class="foreword">Hi, I am <span>Ahmad F. Iksan</span> the <span>self-proclaimed</span> friendliest web developer you'll ever met. Nice too meet you.</p>
+		
+		<h3>Hi, I am <span>ahmad f. iksan</span>, the <span>self-proclaimed</span> friendliest web developer you will ever meet.</h3>
 	</section>
-	<section id="portfolio" class="portfolio"></section>
-	<section id="contact" class="contact"></section>
 	<div class="overlay">
-		<ul>
-			<li><a href="#main" class="mobile-menu scroll">main</a></li>
-			<li><a href="#about" class="mobile-menu scroll">about</a></li>
-			<li><a href="#portfolio" class="mobile-menu scroll">portfolio</a></li>
-			<li><a href="#contact" class="mobile-menu scroll">contact</a></li>
-		</ul>
+			<a href="#main">main</a>
+			<a href="#about">about</a>
+			<a href="#portfolio">portfolio</a>
+			<a href="#contact">contact</a>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<section id="about">
+		<h2>About Me</h2>
+		<div class="container">
+			<div class="pic"></div>
+			<p>I'm a self-taught web developer</p>
+		</div>
+	</section>
+	<section id="portfolio"></section>
+	<section id="contact"></section>
 	<script src="/script/main.js"></script>
 </body>
 </html>
