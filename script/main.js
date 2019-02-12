@@ -7,7 +7,6 @@ const overlay = document.getElementsByClassName('overlay')[0];
 const overlayMenu = overlay.querySelectorAll('a');
 const section = document.querySelectorAll('section');
 
-
 burger.addEventListener('click', ()=>{
     burger.classList.toggle('burger-active');
     overlay.classList.toggle('overlay-active');
@@ -36,7 +35,17 @@ window.onscroll = () => {
     nav.style.top = "0";
   } else {
     burger.style.top = "-60px";
-    nav.style.top = "-55px";
+    burger.style.transition = "top .5s ease";
+    nav.style.top = "-50px";
+    nav.style.transition = "top .5s ease";
   }
   prevScrollpos = currentScrollPos;
 } 
+
+window.addEventListener('scroll', (e)=>{
+	if(this.scrollY > nav.clientHeight){
+		nav.style.background = '#e1c38e';
+	}else{
+	nav.style.transition = 'background .3s linear';
+	nav.style.background = 'transparent'}
+})
