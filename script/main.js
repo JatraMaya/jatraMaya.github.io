@@ -1,51 +1,39 @@
-// Lot's of variables
+// List of Variables
 
-const body = document.getElementsByTagName('body')[0];
 const burger = document.getElementsByClassName('burger')[0];
-const nav = document.getElementsByClassName('main-nav')[0];
 const overlay = document.getElementsByClassName('overlay')[0];
-const overlayMenu = overlay.querySelectorAll('a');
-const section = document.querySelectorAll('section');
+const section = document.getElementsByTagName('section');
+const overlayItem = overlay.getElementsByClassName('overlay-item');
+let scrollPos = window.pageYOffset;
 
-burger.addEventListener('click', ()=>{
-    burger.classList.toggle('burger-active');
-    overlay.classList.toggle('overlay-active');
-    body.classList.toggle('overflow-stop');
-    for (let i = 0; i < section.length; i ++){
-      section[i].classList.toggle('is-blur');
-    }
-})
+window.onscroll = () => {
+  let posNow = window.pageYOffset;
 
-for (let i = 0; i < overlayMenu.length; i++){
-    overlayMenu[i].addEventListener('click',()=>{
-        burger.classList.toggle('burger-active');
-        overlay.classList.toggle('overlay-active');
-        body.classList.toggle('overflow-stop');
-        for (let i = 0; i < section.length; i ++){
-          section[i].classList.toggle('is-blur');
-        }  
-    })
+  if (scrollPos > posNow) {
+    burger.style.top = '2%';
+   } else {
+    burger.style.top = '-50%';
+    burger.style.transition = 'top .5s ease';
+  } scrollPos = posNow;
 }
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = () => {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    burger.style.top = "0";
-    nav.style.top = "0";
-  } else {
-    burger.style.top = "-60px";
-    burger.style.transition = "top .5s ease";
-    nav.style.top = "-50px";
-    nav.style.transition = "top .5s ease";
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger-active');
+  document.getElementsByTagName('body')[0].classList.toggle('stop-overflow');
+  overlay.classList.toggle('overlay-active');
+  for (let i = 0; i < section.length; i++) {
+    section[i].classList.toggle('is-blur');
   }
-  prevScrollpos = currentScrollPos;
-} 
-
-window.addEventListener('scroll', (e)=>{
-	if(this.scrollY > nav.clientHeight){
-		nav.style.background = '#e1c38e';
-	}else{
-	nav.style.transition = 'background .3s linear';
-	nav.style.background = 'transparent'}
 })
+
+for (let i = 0; i < overlayItem.length; i ++) {
+  overlayItem[i].addEventListener('click', () => {
+    burger.classList.toggle('burger-active');
+    document.getElementsByTagName('body')[0].classList.toggle('stop-overflow');
+    overlay.classList.toggle('overlay-active');
+    for (let i = 0; i < section.length; i++) {
+      section[i].classList.toggle('is-blur');
+    } 
+  })
+}
+
