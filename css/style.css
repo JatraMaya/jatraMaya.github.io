@@ -162,12 +162,56 @@ section {
     border-radius: 5px;
     background: #666;
   }
+  #portfolio {
+    height: 50vh;
+  }
+  #portfolio::after {
+    content: "";
+    position: relative;
+    background: #666;
+    width: 140px;
+    height: 5px;
+    display: block;
+    margin: 25px auto 0 auto;
+    border-radius: 5px;
+  }
   #portfolio h2 {
     padding-top: 25px;
     color: #f8e470;
     text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
     font-family: "Anton", sans-serif;
     margin: 0 0 25px 20px;
+  }
+  #portfolio p {
+    font-family: "Roboto", sans-serif;
+    color: #666;
+    text-indent: 25px;
+    text-align: justify;
+    margin: 0 40px;
+  }
+  #portfolio p a {
+    font-weight: 700;
+    color: #296438;
+  }
+  #portfolio p a:visited {
+    color: #c53939;
+  }
+  #portfolio .underConstruction {
+    display: block;
+    width: 200px;
+    margin: 25px auto 0 auto;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+  }
+  #portfolio .underConstruction:hover {
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    -webkit-transform: rotate(24deg) scale(1.2, 2);
+            transform: rotate(24deg) scale(1.2, 2);
   }
   #contact h2 {
     color: #f8e470;
