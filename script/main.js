@@ -30,7 +30,7 @@ window.onscroll = () => {
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('burger-active');
-  document.getElementsByTagName('body')[0].classList.toggle('stop-overflow');
+  document.getElementsByTagName('html')[0].classList.toggle('stop-overflow');
   overlay.classList.toggle('overlay-active');
   for (let i = 0; i < section.length; i++) {
     section[i].classList.toggle('is-blur');
@@ -40,7 +40,7 @@ burger.addEventListener('click', () => {
 for (let i = 0; i < overlayItem.length; i ++) {
   overlayItem[i].addEventListener('click', () => {
     burger.classList.toggle('burger-active');
-    document.getElementsByTagName('body')[0].classList.toggle('stop-overflow');
+    document.getElementsByTagName('html')[0].classList.toggle('stop-overflow');
     overlay.classList.toggle('overlay-active');
     for (let i = 0; i < section.length; i++) {
       section[i].classList.toggle('is-blur');
