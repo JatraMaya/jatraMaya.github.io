@@ -24,7 +24,7 @@ section p {
 section h2 {
   padding: 25px 0 25px 25px;
   font-family: "Anton", sans-serif;
-  color: #f8e470;
+  color: #ebebeb;
   text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
 }
 
@@ -61,7 +61,7 @@ section h2 {
 }
 
 #main h3 {
-  color: #f8e470;
+  color: #ebebeb;
   font-size: 30px;
   font-weight: 800;
   text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
@@ -70,7 +70,7 @@ section h2 {
 }
 
 #main span:first-child {
-  color: #c53939;
+  color: #fcb738;
 }
 
 #main span:nth-child(2) {
@@ -109,7 +109,7 @@ section h2 {
   font-family: "Anton", sans-serif;
   text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
   text-transform: uppercase;
-  color: #c53939;
+  color: #fcb738;
   font-size: 28px;
   padding: 0 35px;
 }
@@ -315,8 +315,8 @@ footer a {
     font-size: 35px;
   }
   .overlay-active {
-    -webkit-transition: left .5s ease-in;
-    transition: left .5s ease-in;
+    -webkit-transition: left .5s ease;
+    transition: left .5s ease;
     left: 0;
   }
   .is-blur {
